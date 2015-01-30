@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6" >
+
+    <RadioGroup
+        android:id="@+id/radioMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_scan"
+            style="@style/menu_button"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/menu_home_selector"
+            android:text="@string/tab_scan" />
+
+        <RadioButton
+            android:id="@+id/rb_history"
+            android:background="@android:color/transparent"
+            style="@style/menu_button"
+            android:drawableTop="@drawable/menu_data_selector"
+            android:text="@string/tab_make_scan" />
+        
+            <RadioButton
+            android:id="@+id/rb_make"
+            style="@style/menu_button"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/menu_feed_selector"
+            android:text="@string/tab_history_scan" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/menu_button"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/menu_set_selector"
+            android:text="@string/tab_settings" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d8d8d8" />
+
+</FrameLayout>
